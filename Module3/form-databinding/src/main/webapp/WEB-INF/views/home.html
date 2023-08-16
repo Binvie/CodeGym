@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=“en” xmlns:th=“http://www.w3.org/1999/xhtml”>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/employee/create"> Create new Customer</a>
+<form th:action="@{/create}">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>CONTRACT NUMBER</th>
+        </tr>
+        <%--@elvariable id="employees" type="java.util.List"--%>
+        <th:each >
+            <tr>
+                <td> </td>
+                <td>${employees.name}</td>
+                <td>${employees.contractNumber} </td>
+            </tr>
+        </th:each>
+    </table>
+</form>
+</body>
+</html>

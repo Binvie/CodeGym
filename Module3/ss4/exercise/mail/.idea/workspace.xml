@@ -4,35 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bfd42ff-2b6f-451f-8449-c4e1e0243f51" name="Changes" comment="">
+    <list default="true" id="6165248e-edd6-4784-9298-ee471672b95c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/configulation/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/configulation/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/configulation/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/controller/EmployController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/model/Employee.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/repository/EmployeeRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/repository/IEmployeeRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/service/EmployeeService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/service/IEmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/controller/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/model/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/repository/IMailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/repository/MailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/service/IMailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/controller/MailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/model/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/repository/IMailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/repository/MailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/service/IMailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -63,9 +64,12 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2U0OXPRAE1Qq9OjlTHm8byGByVH" />
+  <component name="ProjectId" id="2U3V23tVWkkC9NBJ7Tcms3XwG4o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,33 +80,36 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/CodeGym/Module3/ss2/sandwich/sandwich/src/main/webapp/WEB-INF&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/CodeGym/Module3/ss4/exercise/mail/src/main/webapp/WEB-INF&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a102405409f2d420034288973ea5e8fb&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0fb866ec9d25c16c4ad3173a69fcecf5&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.mail.service" />
+      <recent name="com.example.mail.repository" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CodeGym\CodeGym\Module3\ss2\sandwich\sandwich\src\main\webapp\WEB-INF" />
+      <recent name="D:\CodeGym\CodeGym\Module3\ss4\exercise\mail\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="Tomcat 9.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="Gradle : com.example : sandwich-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : com.example : mail-1.0-SNAPSHOT.war">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="aa8df79a-8a71-45d4-b95b-bdbd2288c02d" />
+        <option name="BASE_DIRECTORY_NAME" value="598b4a99-8563-41d6-9b44-40161029a8bd" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -110,7 +117,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52324" />
+        <option name="DEBUG_PORT" value="53614" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -175,7 +182,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : com.example : sandwich-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : com.example : mail-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
@@ -183,18 +190,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6bfd42ff-2b6f-451f-8449-c4e1e0243f51" name="Changes" comment="" />
-      <created>1692073082654</created>
+      <changelist id="6165248e-edd6-4784-9298-ee471672b95c" name="Changes" comment="" />
+      <created>1692168042388</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1692073082654</updated>
-      <workItem from="1692073083647" duration="5816000" />
-      <workItem from="1692086390946" duration="2283000" />
-      <workItem from="1692154925184" duration="447000" />
-      <workItem from="1692161136374" duration="923000" />
-      <workItem from="1692171322076" duration="292000" />
-      <workItem from="1692171837770" duration="702000" />
-      <workItem from="1692172986188" duration="197000" />
+      <updated>1692168042388</updated>
+      <workItem from="1692168043385" duration="1901000" />
+      <workItem from="1692175513778" duration="5366000" />
+      <workItem from="1692192376486" duration="1644000" />
     </task>
     <servers />
   </component>
