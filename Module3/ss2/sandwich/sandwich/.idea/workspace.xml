@@ -5,34 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bfd42ff-2b6f-451f-8449-c4e1e0243f51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/controller/EmployController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/repository/IEmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/service/IEmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/controller/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/model/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/repository/IMailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/repository/MailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/service/IMailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/java/com/example/mail/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/java/com/example/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/customer-management/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/java/com/example/practice/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/practice/src/main/webapp/WEB-INF/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/Service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/Service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/java/com/example/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss4/exercise/product-management/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../form-databinding/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../form-databinding/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4/exercise/mail/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +210,7 @@
       <workItem from="1692171322076" duration="292000" />
       <workItem from="1692171837770" duration="702000" />
       <workItem from="1692172986188" duration="197000" />
+      <workItem from="1692246392161" duration="1287000" />
     </task>
     <servers />
   </component>

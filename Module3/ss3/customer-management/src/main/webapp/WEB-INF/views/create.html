@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        table, tr, td {
+            border-collapse: collapse;
+            border: 0px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <fieldset style="width: 30%">
+        <legend>Customer Information</legend>
+        <form action="/customer/create" method="post" th:object="${customer}">
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td><input th:field="*{id}" required></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input th:field="*{name}" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input th:field="*{email}" required></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input th:field="*{address}" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Save"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" th:href="@{customer/list}" value="Back to customer list"> </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>

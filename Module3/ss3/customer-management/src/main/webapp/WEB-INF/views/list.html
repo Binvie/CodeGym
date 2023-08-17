@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            margin-right: 0  ;
+        }
+        fieldset {
+            display: flex;
+            justify-content: center;
+        }
+
+        table, tr, td {
+            border-collapse: collapse;
+            border: 0px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a style="color: blue" th:href="@{customer/create}">Add new customer</a>
+</div>
+<div>
+    <p>Search Customer</p>
+    <input type="text" name="string" placeholder="input name">
+    <button  type="submit"> Search </button>
+</div>
+<hr>
+<fieldset style="width: 40%">
+    <legend>Customer Information</legend>
+    <table>
+        <tr style="border: 0px solid blanchedalmond">
+            <td>Stt</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr th:each="customer,status:${customer}">
+            <td th:text="${status.count}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.email}"></td>
+            <td th:text="${customer.address}"></td>
+            <td><a th:href="@{customer/edit(id=${customer.id})}">Edit</a></td>
+            <td><a th:href="@{customer/delete(id=${customer.id})}">Delete</a></td>
+        </tr>
+    </table>
+    <br>
+</fieldset>
+</body>
+</html>

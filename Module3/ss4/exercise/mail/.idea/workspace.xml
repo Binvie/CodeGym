@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6165248e-edd6-4784-9298-ee471672b95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/configulation/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/configulation/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/configulation/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/controller/EmployController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/repository/IEmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/java/com/example/service/IEmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../form-databinding/src/main/webapp/WEB-INF/views/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/controller/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/model/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/repository/IMailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/repository/MailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/service/IMailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mail/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/sandwich/sandwich/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6165248e-edd6-4784-9298-ee471672b95c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,6 +169,7 @@
       <workItem from="1692168043385" duration="1901000" />
       <workItem from="1692175513778" duration="5366000" />
       <workItem from="1692192376486" duration="1644000" />
+      <workItem from="1692241791461" duration="256000" />
     </task>
     <servers />
   </component>

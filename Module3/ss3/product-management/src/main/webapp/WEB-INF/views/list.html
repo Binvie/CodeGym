@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            margin-right: 0  ;
+        }
+        fieldset {
+            display: flex;
+            justify-content: center;
+        }
+
+        table, tr, td {
+            border-collapse: collapse;
+            border: 0px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a style="color: blue" th:href="@{product/create}">Add new product</a>
+</div>
+<div>
+    <p>Search Customer</p>
+    <input type="text" name="string" placeholder="input name">
+    <button  type="submit"> Search </button>
+</div>
+<hr>
+<fieldset style="width: 40%">
+    <legend>Customer Information</legend>
+    <table>
+        <tr style="border: 0px solid blanchedalmond">
+            <td>Stt</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Description</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr th:each="product,status:${products}">
+            <td th:text="${status.count}"></td>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+            <td th:text="${product.description}"></td>
+            <td><a th:href="@{product/edit(id=${product.id})}">Edit</a></td>
+            <td><a th:href="@{product/delete(id=${product.id})}">Delete</a></td>
+        </tr>
+    </table>
+    <br>
+</fieldset>
+</body>
+</html>

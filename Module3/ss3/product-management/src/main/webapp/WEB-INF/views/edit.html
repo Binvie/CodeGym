@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        table, tr, td {
+            border-collapse: collapse;
+            border: 0px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <fieldset style="width: 30%">
+        <legend>Product Information</legend>
+        <form action="/product/edit" method="post" th:object="${product}">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" th:field="*{name}"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" th:field="*{price}"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td> <input type="text" th:field="*{description}"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Save"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" th:href="@{product}" value="Back to product list"> </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>
