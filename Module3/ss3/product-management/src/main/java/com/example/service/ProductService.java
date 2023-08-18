@@ -1,4 +1,4 @@
-package com.example.Service;
+package com.example.service;
 
 import com.example.model.Product;
 import com.example.repository.IProductRepository;
@@ -34,5 +34,10 @@ public class ProductService implements IProductService{
     @Override
     public void remove(int id) {
         productRepository.remove(id);
+    }
+
+    @Override
+    public List<Product> searchByName(String name) {
+        return productRepository.searchByName(name);
     }
 }

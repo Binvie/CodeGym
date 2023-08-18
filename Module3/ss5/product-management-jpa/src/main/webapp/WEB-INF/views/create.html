@@ -19,20 +19,23 @@
 <div>
     <fieldset style="width: 30%">
         <legend>Product Information</legend>
-        <form action="/product/edit" method="post" th:object="${product}">
+        <form action="/product/create" method="post" th:object="${product}">
             <table>
-                <input type="hidden" th:field="*{id}">
+                <tr>
+                    <td>Id</td>
+                    <td><input type="hidden" th:field="*{id}" ></td>
+                </tr>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text" th:field="*{name}"></td>
+                    <td><input th:field="*{name}" required></td>
                 </tr>
                 <tr>
                     <td>Price</td>
-                    <td><input type="text" th:field="*{price}"></td>
+                    <td><input th:field="*{price}" required></td>
                 </tr>
                 <tr>
                     <td>Description</td>
-                    <td> <input type="text" th:field="*{description}"></td>
+                    <td><input th:field="*{description}" required></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -40,7 +43,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" th:href="@{product}" value="Back to product list"> </td>
+                    <td><input type="submit" th:href="@{product/list}" value="Back to product list"> </td>
                 </tr>
             </table>
         </form>

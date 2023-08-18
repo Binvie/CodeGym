@@ -41,8 +41,8 @@ public class ProductController {
         return "edit";
     }
     @PostMapping("edit")
-    public String editProduct(Product product, @RequestParam int id, RedirectAttributes redirectAttributes){
-        productService.update(id, product);
+    public String editProduct(Product product, RedirectAttributes redirectAttributes){
+        productService.save(product);
         redirectAttributes.addFlashAttribute("mess","Edit successfully");
         return "redirect:/product";
     }
@@ -52,9 +52,11 @@ public class ProductController {
         redirectAttributes.addFlashAttribute("mess","Delete successfully");
         return "redirect:/product";
     }
-    @GetMapping("search")
-    public String searchName(@RequestParam String word , RedirectAttributes redirectAttributes){
-        redirectAttributes.addFlashAttribute("list",productService.searchByName(word));
-        return "redirect:/product";
+    @PostMapping("search")
+    public String searchName(@RequestParam String word , Model model){
+        List<Product> products = productService.searchByName(word);
+        model.addAttribute("products",products);
+        System.out.println(products.size());
+        return "list";
     }
 }

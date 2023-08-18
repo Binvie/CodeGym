@@ -1,10 +1,10 @@
-package com.example.repository;
+package com.example.service;
 
 import com.example.model.Product;
 
 import java.util.List;
 
-public interface IProductRepository {
+public interface IProductService {
     List<Product> findAll();
 
     void save(Product product);
@@ -15,4 +15,5 @@ public interface IProductRepository {
 
     void remove(int id);
     List<Product> searchByName(String name);
+
 }

@@ -24,9 +24,11 @@
     <a style="color: blue" th:href="@{product/create}">Add new product</a>
 </div>
 <div>
+    <form action="/product/search" method="post">
     <p>Search Customer</p>
     <input type="text" name="word" placeholder="input name">
     <button type="submit"> Search</button>
+    </form>
 </div>
 <hr>
 <fieldset style="width: 40%">
