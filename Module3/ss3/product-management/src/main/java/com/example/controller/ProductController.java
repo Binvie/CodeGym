@@ -46,8 +46,8 @@ public class ProductController {
         redirectAttributes.addFlashAttribute("mess","Edit successfully");
         return "redirect:/product";
     }
-    @GetMapping("delete")
-    public String deleteForm(@RequestParam int id , RedirectAttributes redirectAttributes){
+    @GetMapping("delete/{id}")
+    public String deleteForm(@PathVariable int id , RedirectAttributes redirectAttributes){
         productService.remove(id);
         redirectAttributes.addFlashAttribute("mess","Delete successfully");
         return "redirect:/product";
