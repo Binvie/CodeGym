@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>User Sing-in</h1>
+<form action="/users/view" th:object="${user}" method="post" >
+    <fieldset>
+        <legend>Sign In</legend>
+        <table>
+            <tr>
+                <td>First Name: <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span></td>
+                <td><input type="text" th:field="*{firstName}"></td>
+            </tr>
+            <tr>
+                <td>Last Name: <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span></td>
+                <td><input type="text" th:field="*{lastName}"></td>
+            </tr>
+            <tr>
+                <td>Phone Number: <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span></td>
+                <td><input type="text" th:field="*{phoneNumber}"></td>
+            </tr>
+            <tr>
+                <td>Age: <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span></td>
+                <td><input type="text" th:field="*{age}"></td>
+            </tr>
+            <tr>
+                <td>Email: <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></td>
+                <td><input type="text" th:field="*{email}"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
