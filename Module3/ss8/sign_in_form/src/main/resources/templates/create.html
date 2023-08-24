@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>User Sing-in</h1>
+<form action="/users/create" th:object="${user}" method="post" >
+    <fieldset>
+        <legend>Sign In</legend>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" th:field="*{firstName}"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" th:field="*{lastName}"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" th:field="*{phoneNumber}"></td>
+            </tr>
+            <tr>
+                <td>Age:</span></td>
+                <td><input type="text" th:field="*{age}"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" th:field="*{email}"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

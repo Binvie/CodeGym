@@ -5,37 +5,34 @@
     <title>Title</title>
 </head>
 <body>
-<h1>User Sing-in</h1>
-<form action="/users/view" th:object="${user}" method="post" >
-    <fieldset>
-        <legend>Sign In</legend>
-        <table>
+<h1>User list</h1>
+<a href="/users/create">Create new User</a>
+<fieldset>
+    <legend>User Info</legend>
+    <table style="border: 1px">
+        <tr>
+            <td>STT</td>
+            <td>First Name:</td>
+            <td>Last Name:</td>
+            <td>Phone Number:</td>
+            <td>Age:</td>
+            <td>Email:</td>
+            <td>Edit:</td>
+            <td>Delete:</td>
+        </tr>
+        <th:block th:each="list,status : ${list}">
             <tr>
-                <td>First Name: <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span></td>
-                <td><input type="text" th:field="*{firstName}"></td>
+                <td th:text="${status.count}"></td>
+                <td th:text="${list.firstName}"></td>
+                <td th:text="${list.lastName}"></td>
+                <td th:text="${list.phoneNumber}"></td>
+                <td th:text="${list.age}"></td>
+                <td th:text="${list.email}"></td>
+                <td><input type="button"  th:href="@{/users/edit/{id}(id=${list.id})}">Edit</td>
+                <td><input type="button"  th:href="@{/users/delete/{id}(id=${list.id})}">delete</td>
             </tr>
-            <tr>
-                <td>Last Name: <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span></td>
-                <td><input type="text" th:field="*{lastName}"></td>
-            </tr>
-            <tr>
-                <td>Phone Number: <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span></td>
-                <td><input type="text" th:field="*{phoneNumber}"></td>
-            </tr>
-            <tr>
-                <td>Age: <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span></td>
-                <td><input type="text" th:field="*{age}"></td>
-            </tr>
-            <tr>
-                <td>Email: <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></td>
-                <td><input type="text" th:field="*{email}"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit"></td>
-            </tr>
-        </table>
-    </fieldset>
-</form>
+        </th:block>
+    </table>
+</fieldset>
 </body>
 </html>

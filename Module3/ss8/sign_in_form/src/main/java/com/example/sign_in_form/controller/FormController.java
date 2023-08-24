@@ -18,21 +18,26 @@ import javax.validation.Valid;
 public class FormController {
     @Autowired
     private IUserService iUserService;
-    @GetMapping("/view")
-    public String showForm(Model model) {
-        model.addAttribute("user",new User());
+    @GetMapping("")
+    public String showList(Model model){
+        model.addAttribute("lists", iUserService.findAll());
         return "/view";
     }
-    @PostMapping("/view")
-    public ModelAndView SingIn(@Valid User user, BindingResult bindingResult) {
+    @GetMapping("/create")
+    public String createForm(Model model) {
+        model.addAttribute("user",new User());
+        return "/create";
+    }
+    @PostMapping("/create")
+    public ModelAndView createUser(@Valid User user, BindingResult bindingResult) {
 
         ModelAndView modelAndView ;
         if (bindingResult.hasFieldErrors()){
-            modelAndView = new ModelAndView("/view");
+            modelAndView = new ModelAndView("create");
             return modelAndView;
         }
         iUserService.save(user);
-        modelAndView = new ModelAndView("/view","message","create successfully");
+        modelAndView = new ModelAndView("create","message","create successfully");
         return modelAndView ;
     }
 }

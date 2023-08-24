@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface IUserService {
+public interface IUserService  {
     List<User> findAll();
     User findById(int id);
     void save(User user);
