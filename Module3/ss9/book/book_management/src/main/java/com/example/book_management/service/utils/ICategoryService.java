@@ -1,4 +1,6 @@
 package com.example.book_management.service.utils;
 
-public interface ICategoryService {
+import com.example.book_management.model.Category;
+
+public interface ICategoryService extends IGenerateService<Category> {
 }

@@ -29,12 +29,12 @@ public class BookService implements IBookService {
 
     @Override
     public void save(Book book) {
-
+        bookRepository.save(book);
     }
 
     @Override
-    public void remove(Long id) {
-
+    public void remove(int id) {
+        bookRepository.deleteById(id);
     }
 
     @Override

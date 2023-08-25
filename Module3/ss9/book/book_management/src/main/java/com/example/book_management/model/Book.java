@@ -12,13 +12,13 @@ public class Book {
     private int quantity;
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
-    private Category categoryId;
+    private Category category;
 
-    public Book(int id, String name, int quantity, Category categoryId) {
+    public Book(int id, String name, int quantity, Category category) {
         this.id = id;
         this.name = name;
         this.quantity = quantity;
-        this.categoryId = categoryId;
+        this.category = category;
     }
 
     public Book() {
@@ -48,11 +48,11 @@ public class Book {
         this.quantity = quantity;
     }
 
-    public Category getCategoryId() {
-        return categoryId;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setCategoryId(Category categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

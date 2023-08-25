@@ -10,9 +10,12 @@
     <a href="/books/create"> Add new Blog</a>
 </p>
 <form action="/books" method="get">
-<input type="text"  name="searchName" >
+    <input type="text" name="searchName">
     <input type="submit" value="Search">
 </form>
+<th:block th:each="list : ${categoryList}">
+    <input type="button" th:value="${list.categoryName}" name="categoryName">
+</th:block>
 <fieldset>
     <legend>Blog information</legend>
     <table border="1">
@@ -20,6 +23,8 @@
             <td>STT</td>
             <td>Name</td>
             <td>Number of page</td>
+            <td>Category</td>
+            <td></td>
 
         </tr>
         <th:block th:each="bookList,status:${bookList}">
@@ -27,6 +32,8 @@
                 <td th:text="${status.count}"></td>
                 <td th:text="${bookList.name}"></td>
                 <td th:text="${bookList.quantity}"></td>
+                <td th:text="${bookList.category.categoryName}"></td>
+                <td><a role="button" th:href="@{/books/detail/{id}/(id=${bookList.id})}">Rent</a></td>
             </tr>
         </th:block>
     </table>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Book Detail</h1>
+<form action="/books/detail" method="post" th:object="${book}">
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Number of Page</td>
+            <td>Category</td>
+            <td>Customer</td>
+        </tr>
+        <tr>
+            <td th:text="${book.getName()}"></td>
+            <td th:text="${book.getQuantity()}"></td>
+            <td th:text="${book.getCategory().categoryName}"></td>
+            <td> <select>
+                <option th:each="customerList : ${customerList}" th:text="${customerList.getName()}"
+                        th:value="${customerList.getId()}">></option>
+            </select></td>
+        </tr>
+    </table>
+    <input type="submit" value="Rent">
+</form>
+</body>
+</html>
