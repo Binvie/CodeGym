@@ -50,7 +50,7 @@ public class BlogController {
     }
     @GetMapping("/delete/{id}")
     public ModelAndView deleteForm(@PathVariable int id){
-        Optional<Blog> blog = blogService.findById(id);
+        Blog blog = blogService.findById(id);
         ModelAndView modelAndView = new ModelAndView("/delete","blog",blog);
         return modelAndView;
     }

@@ -17,13 +17,13 @@ public class CustomerController {
     @Autowired
     private ICustomerService customerService;
 
-    @GetMapping
+    @GetMapping("")
     public ResponseEntity<Iterable<Customer>> findAllCustomer() {
         List<Customer> customers = customerService.findAll();
         if (customers.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(customers,HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
@@ -48,5 +48,15 @@ public class CustomerController {
         }
         customer.setId(customerOptional.get().getId());
         return new ResponseEntity<>(customerService.save(customer), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Customer> deleteCustomer(@PathVariable int id) {
+        Optional<Customer> customerOptional = customerService.findById(id);
+        if (!customerOptional.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        customerService.remove(id);
+        return new ResponseEntity<>(customerOptional.get(), HttpStatus.OK);
     }
 }
