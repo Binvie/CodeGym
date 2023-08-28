@@ -42,4 +42,10 @@ public class CustomerService implements ICustomerService {
     public Page<Customer> findAll(Pageable pageable, String name) {
         return customerRepository.findAll(pageable,name);
     }
+
+    @Override
+    public Customer findCustomerByName(String name) {
+        return customerRepository.findCustomerByName(name);
+    }
+
 }

@@ -14,5 +14,6 @@ import org.springframework.stereotype.Repository;
 public interface ICustomerRepository extends JpaRepository<Customer,Integer> {
     @Query(value = "select * from customer where name like :name",nativeQuery = true)
     Page<Customer> findAll(Pageable pageable, @Param("name") String name);
-
+    @Query(value = "select * from customer where name = :name",nativeQuery = true)
+    Customer findCustomerByName(String name);
 }

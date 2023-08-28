@@ -10,17 +10,17 @@
     <table border="1">
         <tr>
             <td>Name</td>
-            <td>Number of Page</td>
+            <td>Remaining books</td>
             <td>Category</td>
             <td>Customer</td>
         </tr>
         <tr>
             <td th:text="${book.getName()}"></td>
             <td th:text="${book.getQuantity()}"></td>
-            <td th:text="${book.getCategory().categoryName}"></td>
-            <td> <select>
+            <td th:text="${book.getCategory().categoryName}" ></td>
+            <td> <select name = "customerId">
                 <option th:each="customerList : ${customerList}" th:text="${customerList.getName()}"
-                        th:value="${customerList.getId()}">></option>
+                        th:value="${customerList.getId()}"></option>
             </select></td>
         </tr>
     </table>

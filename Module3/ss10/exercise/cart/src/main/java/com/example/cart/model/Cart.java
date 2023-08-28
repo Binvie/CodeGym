@@ -46,4 +46,16 @@ public class Cart {
             productMap.replace(item.getKey(), amount);
         }
     }
+    public Integer countProductQuantity(){
+        Integer quantity = 0;
+        for (Map.Entry<Product,Integer> entry : productMap.entrySet()){
+            quantity += entry.getValue();
+        }return quantity;
+    }
+    public Float totalPayment(){
+        float payment = 0;
+        for (Map.Entry<Product,Integer> entry : productMap.entrySet()){
+            payment += (float) (entry.getValue() * entry.getKey().getPrice());
+        }return  payment;
+    }
 }

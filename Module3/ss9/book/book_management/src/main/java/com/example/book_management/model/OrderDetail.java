@@ -20,6 +20,17 @@ public class OrderDetail {
     public OrderDetail() {
     }
 
+    public OrderDetail(Book book, Customer customer) {
+        this.book = book;
+        this.customer = customer;
+    }
+
+    public OrderDetail(int id, Book book, Customer customer) {
+        this.id = id;
+        this.book = book;
+        this.customer = customer;
+    }
+
     public OrderDetail(int id, Book book, Customer customer, int code) {
         this.id = id;
         this.book = book;

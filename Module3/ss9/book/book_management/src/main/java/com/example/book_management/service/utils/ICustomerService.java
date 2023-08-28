@@ -7,4 +7,5 @@ import org.springframework.data.domain.Pageable;
 
 public interface ICustomerService extends IGenerateService<Customer> {
     Page<Customer> findAll(Pageable pageable,String name);
+    Customer findCustomerByName(String name);
 }
