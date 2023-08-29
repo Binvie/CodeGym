@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" id="search">
+<button id="btn">Search</button>
+<script>
+    display()
+    function display() {
+        let content = "";
+        $.ajax({
+            contentType: "application/json",
+            method: "Get",
+            dataType: "json",
+            url: "http://localhost:8080//api/blogs",
+            success: function (lists) {
+                console.log(lists)
+                for (let i = 0; i < lists.length; i++) {
+                    content += "<tr>\n" +
+                        "    <td>${i+1}</td>\n" +
+                        "    <td>${lists[i].name}</td>\n" +
+                        "    <td>${lists[i].category}</td>\n" +
+                        "    <td>${lists[i].numberPage}</td>\n" +
+                        "    <td>${lists[i].content}</td>\n" +
+                        "</tr>"
+                }
+                $("#content").html(content);
+            }
+        })
+    }
+</script>
+<script>
+    $("#btn")
+</script>
+
+</body>
+</html>

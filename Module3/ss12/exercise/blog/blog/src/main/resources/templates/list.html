@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Blog list</h1>
+<p>
+    <a href="/blogs/create"> Add new Blog</a>
+</p>
+<input type="text" id="search">
+<button id="btn">Search</button>
+<fieldset>
+    <legend>Blog information</legend>
+<!--    <script>-->
+<!--        display()-->
+<!--        function display(){-->
+<!--            let content = "";-->
+<!--            $.ajax({-->
+<!--                -->
+<!--                }-->
+<!--            )-->
+<!--        }-->
+<!--    </script>-->
+    <table border="1">
+        <tr>
+            <td>STT</td>
+            <td>Name</td>
+            <td>Category</td>
+            <td>Number of page</td>
+            <td>Content</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <th:block th:each="list,status:${lists}">
+            <tr>
+                <td th:text="${status.count}"></td>
+                <td th:text="${list.title}"></td>
+                <td
+                        th:text="${list.category.categoryName}"
+                ></td>
+                <td th:text="${list.numberPage}"></td>
+                <td th:text="${list.content}"></td>
+                <td><a th:href="@{/blogs/edit/{id}/(id=${list.id})}" >edit</a></td>
+                <td><a th:href="@{/blogs/delete/{id}/(id=${list.id})}" >delete</a></td>
+            </tr>
+        </th:block>
+    </table>
+    <div align="center">
+        <a th:if="${lists.hasPrevious()}" th:href="@{/blogs(page=${lists.number-1})}">Trước</a>
+        <span th:text="${lists.number+1}"></span>/<span th:text="${lists.totalPages}"></span>
+        <a th:if="${lists.hasNext()}" th:href="@{/blogs(page=${lists.number+1})}">Sau</a>
+    </div>
+</fieldset>
+</body>
+</html>
